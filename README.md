@@ -47,14 +47,13 @@ Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 
 
 ## Integrantes
 
-| Nome | RM | Turma | Foto | GitHub | LinkedIn |
-| --- | --- | --- | --- | --- | --- |
-| Lucas Kaftan | RM571302 | 1TDSPV | `assets/foto-lucaskaftan.jpg` | https://github.com/studdw | https://www.linkedin.com/in/lucas-pasturuti-354523273/?locale=en_US |
-| Matheus Ruas | RM571047 | 1TDSPV | `assets/foto-matheusruas.jpg` | https://github.com/IuRuas | https://www.linkedin.com/in/
-matheus-iumatti-ruas-6923352bb/?skipRedirect=true |
-| Matheus Costa | RM573146 | 1TDSPV | `assets/foto-matheuscosta.jpg` | https://github.com/MatheusC0625 | https://www.linkedin.com/in/matheusrodrigues06/ |
-| Vinicius Espositto | RM571844 | 1TDSPV | `assets/foto-vinicius.jpg` | https://github.com/ViniEsposito-dev | https://www.linkedin.com/in/vinicius-silveira-esp%C3%B3sito-107a2a25a/ |
-| Lucas Luque | RM573347 | 1TDSPV | `assets/foto-lucasluque.jpg` | https://github.com/LucasCabral0603 | https://www.linkedin.com/in/lucas-luque-cabral-660940350/ |
+| Nome | RM | Turma | GitHub | LinkedIn |
+| --- | --- | --- | --- | --- |
+| Lucas Kaftan | RM571302 | 1TDSPV | https://github.com/studdw | https://www.linkedin.com/in/lucas-pasturuti-354523273/?locale=en_US |
+| Matheus Ruas | RM571047 | 1TDSPV | https://github.com/IuRuas | https://www.linkedin.com/in/ |
+| Matheus Costa | RM573146 | 1TDSPV | https://github.com/MatheusC0625 | https://www.linkedin.com/in/matheusrodrigues06/ |
+| Vinicius Espositto | RM571844 | 1TDSPV |  https://github.com/ViniEsposito-dev | https://www.linkedin.com/in/vinicius-silveira-esp%C3%B3sito-107a2a25a/ |
+| Lucas Luque | RM573347 | 1TDSPV |  https://github.com/LucasCabral0603 | https://www.linkedin.com/in/lucas-luque-cabral-660940350/ |
 
 ## Imagens e icones
 
