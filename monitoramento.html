@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoramento | VerdeVigia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho-site">
+    <nav class="barra-menu conteiner">
+      <a class="marca" href="index.html"><img src="assets/logo.svg" alt="" class="icone-marca"><span>VerdeVigia</span></a>
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <ul class="links-menu" id="main-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="monitoramento.html" class="atual">Monitoramento</a></li>
+        <li><a href="carbono.html">Carbono</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a class="link-contato" href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topo-pagina secao">
+      <div class="conteiner estreito">
+        <h1>Dashboard de alertas ambientais.</h1>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="conteiner grade-painel">
+        <aside class="painel-controle">
+          <h2>Simulador de area</h2>
+          <label for="areaRange">Area analisada (hectares)</label>
+          <input id="areaRange" type="range" min="10" max="250" value="80">
+          <output id="areaOutput" for="areaRange">80 ha</output>
+          <label for="vegetationRange">Cobertura vegetal detectada</label>
+          <input id="vegetationRange" type="range" min="5" max="100" value="68">
+          <output id="vegetationOutput" for="vegetationRange">68%</output>
+          <button class="botao principal cheio" id="simulateAlert" type="button">Atualizar alerta</button>
+        </aside>
+
+        <section class="painel-mapa">
+          
+          <div class="mapa-satelite">
+            <span class="area floresta"></span>
+            <span class="area plantio"></span>
+            <span class="area risco"></span>
+            <span class="area agua"></span>
+            <span class="linha-varredura"></span>
+          </div>
+          <div class="legenda-mapa">
+            <span><i class="legenda-cor floresta"></i>Floresta</span>
+            <span><i class="legenda-cor plantio"></i>Lavoura</span>
+            <span><i class="legenda-cor risco"></i>Alerta</span>
+            <span><i class="legenda-cor agua"></i>Rio</span>
+          </div>
+        </section>
+
+        <section class="painel-status">
+          <p class="rotulo">Resultado</p>
+          <h2 id="riscoTitle">Risco moderado</h2>
+          <p id="riscoText">A area tem boa cobertura vegetal, mas precisa de vistoria em um ponto de solo exposto.</p>
+          <div class="linha-metricas">
+            <div><strong id="ndviValue">0.68</strong><span>Indice NDVI</span></div>
+            <div><strong id="carbonValue">42 t</strong><span>Carbono estimado</span></div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="rodape-site">
+    <div class="conteiner grade-rodape">
+      <div><strong>VerdeVigia</strong></div>
+      <a href="carbono.html">Ver mercado de carbono</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
