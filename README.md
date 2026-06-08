@@ -1,6 +1,6 @@
 # VerdeVigia
 
-Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 2026 da FIAP. A proposta conecta dados abertos de satelites, pequenos produtores rurais, validacao comunitaria e mercado de carbono.
+Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 2026 da FIAP. A proposta conecta dados abertos de satélites, pequenos produtores rurais, validacao comunitaria e mercado de carbono.
 
 ## Tecnologias utilizadas
 
@@ -14,10 +14,13 @@ Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 
 ```text
 .
 |-- assets/
-|   |-- foto-integrante.svg
 |   |-- logo.svg
-|   |-- satelite-field.png
-|   `-- satellite-field.svg
+|   |-- foto-matheusruas.png
+|   |-- foto-lucaskaftan.png
+|   |-- foto-vinicius.png
+|   |-- foto-lucasluque.png
+|   |-- foto-matheuscosta.png
+|
 |-- css/
 |   `-- style.css
 |-- js/
@@ -34,23 +37,24 @@ Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 
 
 ## Paginas do projeto
 
-- `index.html`: apresentacao inicial da solucao.
-- `sobre.html`: contexto, motivacao e tecnologias.
-- `monitoramento.html`: prototipo de dashboard ambiental.
+- `index.html`: apresentação inícial da solução.
+- `sobre.html`: contexto, motivação e tecnologias.
+- `monitoramento.html`: protótipo de dashboard ambiental.
 - `carbono.html`: fluxo de monetizacao e calculadora simples.
 - `faq.html`: perguntas frequentes com acordeon em JavaScript.
-- `contato.html`: formulario com validacao em JavaScript.
+- `contato.html`: formulario com validacão em JavaScript.
 - `integrantes.html`: equipe, RM, turma, fotos e links.
 
 ## Integrantes
 
 | Nome | RM | Turma | Foto | GitHub | LinkedIn |
 | --- | --- | --- | --- | --- | --- |
-| Lucas Kaftan | RM571302 | 1TDSPV | `assets/foto-integrante.svg` | https://github.com/studdw | https://www.linkedin.com/in/lucas-pasturuti-354523273/?locale=en_US |
-| Matheus Ruas | RM571047 | 1TDSPV | `assets/foto-integrante.svg` | https://github.com/IuRuas | https://www.linkedin.com/in/matheus-iumatti-ruas-6923352bb/?skipRedirect=true |
-| Matheus Costa | RM573146 | 1TDSPV | `assets/foto-integrante.svg` | https://github.com/MatheusC0625 | https://www.linkedin.com/in/matheusrodrigues06/ |
-| Vinicius Espositto | RM571844 | 1TDSPV | `assets/foto-integrante.svg` | https://github.com/ViniEsposito-dev | https://www.linkedin.com/in/vinicius-silveira-esp%C3%B3sito-107a2a25a/ |
-| Lucas Luque | RM573347 | 1TDSPV | `assets/foto-integrante.svg` | https://github.com/LucasCabral0603 | https://www.linkedin.com/in/lucas-luque-cabral-660940350/ |
+| Lucas Kaftan | RM571302 | 1TDSPV | `assets/foto-lucaskaftan.jpg` | https://github.com/studdw | https://www.linkedin.com/in/lucas-pasturuti-354523273/?locale=en_US |
+| Matheus Ruas | RM571047 | 1TDSPV | `assets/foto-matheusruas.jpg` | https://github.com/IuRuas | https://www.linkedin.com/in/
+matheus-iumatti-ruas-6923352bb/?skipRedirect=true |
+| Matheus Costa | RM573146 | 1TDSPV | `assets/foto-matheuscosta.jpg` | https://github.com/MatheusC0625 | https://www.linkedin.com/in/matheusrodrigues06/ |
+| Vinicius Espositto | RM571844 | 1TDSPV | `assets/foto-vinicius.jpg` | https://github.com/ViniEsposito-dev | https://www.linkedin.com/in/vinicius-silveira-esp%C3%B3sito-107a2a25a/ |
+| Lucas Luque | RM573347 | 1TDSPV | `assets/foto-lucasluque.jpg` | https://github.com/LucasCabral0603 | https://www.linkedin.com/in/lucas-luque-cabral-660940350/ |
 
 ## Imagens e icones
 
@@ -58,7 +62,7 @@ As imagens do projeto ficam na pasta `assets`, incluindo logo, ilustracao princi
 
 ## Link do repositorio
 
-https://github.com/lucaskp/gs-frontend
+https://github.com/studdw/gs-frontend
 
 ## Contato
 
