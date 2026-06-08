@@ -15,11 +15,11 @@ Plataforma de monitoramento ambiental comunitaria criada para a Global Solution 
 .
 |-- assets/
 |   |-- logo.svg
-|   |-- foto-matheusruas.png
-|   |-- foto-lucaskaftan.png
-|   |-- foto-vinicius.png
-|   |-- foto-lucasluque.png
-|   |-- foto-matheuscosta.png
+|   |-- foto-matheusruas.jpg
+|   |-- foto-lucaskaftan.jpg
+|   |-- foto-vinicius.jpg
+|   |-- foto-lucasluque.jpg
+|   |-- foto-matheuscosta.jpg
 |
 |-- css/
 |   `-- style.css
