@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbono | VerdeVigia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho-site">
+    <nav class="barra-menu conteiner">
+      <a class="marca" href="index.html"><img src="assets/logo.svg" alt="" class="icone-marca"><span>VerdeVigia</span></a>
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <ul class="links-menu" id="main-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="monitoramento.html">Monitoramento</a></li>
+        <li><a href="carbono.html" class="atual">Carbono</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a class="link-contato" href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topo-pagina secao">
+      <div class="conteiner estreito">
+        <p class="rotulo">Mercado de carbono</p>
+        <h1>Transforme sua area verde em renda.</h1>
+        <p>Calcule o potencial de creditos de carbono da sua propriedade e entenda como monetizar suas praticas sustentaveis.</p>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro">
+      <div class="conteiner duas-colunas">
+        <div>
+          <p class="rotulo">Como funciona</p>
+          <h2>Do monitoramento ao credito de carbono.</h2>
+          <ol class="linha-tempo">
+            <li>
+              <strong>Monitoramento</strong>
+              <span>Satelites analisam a cobertura vegetal da sua propriedade.</span>
+            </li>
+            <li>
+              <strong>Calculo</strong>
+              <span>O sistema estima a quantidade de carbono sequestrado pela vegetacao.</span>
+            </li>
+            <li>
+              <strong>Certificacao</strong>
+              <span>Evidencias sao organizadas para validacao por orgaos certificadores.</span>
+            </li>
+            <li>
+              <strong>Monetizacao</strong>
+              <span>Creditos sao negociados no mercado voluntario de carbono.</span>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <p class="rotulo">Calculadora</p>
+          <h2>Estime seus creditos.</h2>
+          <div class="painel-controle">
+            <label for="areaCalc">Area preservada (hectares)</label>
+            <input id="areaCalc" type="number" min="1" max="10000" placeholder="Ex: 100">
+            <label for="vegetacaoCalc">Tipo de vegetacao</label>
+            <select id="vegetacaoCalc">
+              <option value="floresta">Floresta nativa</option>
+              <option value="caatinga">Caatinga</option>
+              <option value="cerrado">Cerrado</option>
+              <option value="mata">Mata ciliar</option>
+            </select>
+            <button class="botao principal cheio" type="button" id="calcularCarbono">Calcular potencial</button>
+            <div id="resultadoCarbono" class="painel-status" style="display:none">
+              <p class="rotulo">Resultado estimado</p>
+              <h2 id="valorCarbono">0 toneladas</h2>
+              <p id="valorReais">Equivalente a R$ 0,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="conteiner">
+        <div class="titulo-secao">
+          <p class="rotulo">Beneficios</p>
+          <h2>Por que participar do mercado de carbono.</h2>
+        </div>
+        <div class="grade-cards">
+          <article class="card-info">
+            <h3>Renda extra</h3>
+            <p>Transforme sua area preservada em fonte de receita sem precisar desmatar ou alterar o uso da terra.</p>
+          </article>
+          <article class="card-info">
+            <h3>Certificacao ambiental</h3>
+            <p>Comprove suas praticas sustentaveis com dados confiaveis de satelite e validacao comunitaria.</p>
+          </article>
+          <article class="card-info">
+            <h3>Acesso a seguros</h3>
+            <p>Produtores certificados tem mais facilidade para acessar seguros agricolas e linhas de credito verde.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-site">
+    <div class="conteiner grade-rodape">
+      <div><strong>VerdeVigia</strong></div>
+      <a href="monitoramento.html">Ver monitoramento</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('calcularCarbono').addEventListener('click', function() {
+      const area = parseFloat(document.getElementById('areaCalc').value);
+      const vegetacao = document.getElementById('vegetacaoCalc').value;
+
+      if (!area || area <= 0) {
+        alert('Por favor, informe uma area valida.');
+        return;
+      }
+
+      const fator = {
+        floresta: 150,
+        caatinga: 80,
+        cerrado: 100,
+        mata: 120
+      };
+
+      const toneladas = Math.round(area * fator[vegetacao]);
+      const reais = toneladas * 50;
+
+      document.getElementById('valorCarbono').innerText = toneladas + ' toneladas de CO2';
+      document.getElementById('valorReais').innerText = 'Equivalente a R$ ' + reais.toLocaleString('pt-BR') + ',00';
+      document.getElementById('resultadoCarbono').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
