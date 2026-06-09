@@ -9,15 +9,8 @@
 <body>
   <header class="cabecalho-site">
     <nav class="barra-menu conteiner">
-      <a class="marca" href="index.html">
-        <img src="assets/logo.svg" alt="" class="icone-marca">
-        <span>VerdeVigia</span>
-      </a>
-
-      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
-        <span></span><span></span><span></span>
-      </button>
-
+      <a class="marca" href="index.html"><img src="assets/logo.svg" alt="" class="icone-marca"><span>VerdeVigia</span></a>
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
       <ul class="links-menu" id="main-menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -35,7 +28,7 @@
       <div class="conteiner estreito">
         <p class="rotulo">Contato</p>
         <h1>Fale com a equipe VerdeVigia.</h1>
-        <p>Envie duvidas, sugestoes ou parcerias. Preencha o formulario abaixo e a equipe respondera o mais breve possivel.</p>
+        <p>Formulario com validacao em JavaScript para simular o envio de mensagens.</p>
       </div>
     </section>
 
@@ -44,41 +37,35 @@
         <form class="formulario-contato" id="contactForm" novalidate>
           <div class="campo-formulario">
             <label for="name">Nome completo</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Seu nome">
+            <input id="name" name="name" type="text" autocomplete="name">
             <small class="mensagem-erro"></small>
           </div>
-
           <div class="campo-formulario">
             <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@email.com">
+            <input id="email" name="email" type="email" autocomplete="email">
             <small class="mensagem-erro"></small>
           </div>
-
           <div class="campo-formulario">
             <label for="subject">Assunto</label>
             <select id="subject" name="subject">
-              <option value="">Selecione um assunto</option>
-              <option value="duvida">Duvida</option>
-              <option value="sugestao">Sugestao</option>
+              <option value="">Selecione</option>
+              <option value="monitoramento">Monitoramento ambiental</option>
+              <option value="carbono">Credito de carbono</option>
               <option value="parceria">Parceria</option>
-              <option value="outro">Outro</option>
             </select>
             <small class="mensagem-erro"></small>
           </div>
-
           <div class="campo-formulario">
             <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem"></textarea>
+            <textarea id="message" name="message" rows="6"></textarea>
             <small class="mensagem-erro"></small>
           </div>
-
           <button class="botao principal cheio" type="submit">Enviar mensagem</button>
           <p class="retorno-formulario" id="formFeedback"></p>
         </form>
 
         <div class="painel-destaque">
           <h2>Informacoes do projeto</h2>
-          <p><strong>E-mail:</strong> contato@verdevigia.com.br</p>
           <p><strong>Turma:</strong> 1TDSPV - ADS FIAP</p>
           <p><strong>Tema:</strong> tecnologia espacial, sustentabilidade e mercado de carbono.</p>
         </div>
@@ -89,10 +76,10 @@
   <footer class="rodape-site">
     <div class="conteiner grade-rodape">
       <div><strong>VerdeVigia</strong></div>
-      <a href="faq.html">Ver perguntas frequentes</a>
+      <a href="faq.html">Ver FAQ</a>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>
+
