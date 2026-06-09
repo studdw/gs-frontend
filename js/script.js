@@ -11,7 +11,7 @@ if (botaoMenu && linksMenu) {
 document.querySelectorAll('.pergunta-faq').forEach((botao) => {
   botao.addEventListener('click', () => {
     const item = botao.closest('.item-faq');
-    item.classList.toggle('aberto');
+    if (item) item.classList.toggle('aberto');
   });
 });
 
@@ -27,7 +27,8 @@ document.querySelectorAll('[data-abas]').forEach((abas) => {
       conteudos.forEach((conteudo) => conteudo.classList.remove('ativo'));
 
       botao.classList.add('ativo');
-      abas.querySelector(`[data-panel="${aba}"]`).classList.add('ativo');
+      const painel = abas.querySelector(`[data-panel="${aba}"]`);
+      if (painel) painel.classList.add('ativo');
     });
   });
 });
@@ -43,7 +44,18 @@ const ndviValue = document.querySelector('#ndviValue');
 const carbonValue = document.querySelector('#carbonValue');
 
 function atualizarPainel() {
-  if (!areaRange || !vegetationRange) return;
+  if (
+    !areaRange ||
+    !vegetationRange ||
+    !areaOutput ||
+    !vegetationOutput ||
+    !riscoTitle ||
+    !riscoText ||
+    !ndviValue ||
+    !carbonValue
+  ) {
+    return;
+  }
 
   const area = Number(areaRange.value);
   const vegetation = Number(vegetationRange.value);
@@ -69,6 +81,7 @@ function atualizarPainel() {
 
 if (simulateAlert) {
   [areaRange, vegetationRange, simulateAlert].forEach((element) => {
+    if (!element) return;
     element.addEventListener('input', atualizarPainel);
     element.addEventListener('click', atualizarPainel);
   });
@@ -78,9 +91,14 @@ const calculateCarbon = document.querySelector('#calculateCarbon');
 
 if (calculateCarbon) {
   calculateCarbon.addEventListener('click', () => {
-    const area = Number(document.querySelector('#carbonArea').value);
-    const price = Number(document.querySelector('#carbonPrice').value);
+    const carbonArea = document.querySelector('#carbonArea');
+    const carbonPrice = document.querySelector('#carbonPrice');
     const result = document.querySelector('#carbonResult');
+
+    if (!carbonArea || !carbonPrice || !result) return;
+
+    const area = Number(carbonArea.value);
+    const price = Number(carbonPrice.value);
 
     if (area <= 0 || price <= 0) {
       result.textContent = 'Preencha valores maiores que zero.';
