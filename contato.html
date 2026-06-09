@@ -9,8 +9,15 @@
 <body>
   <header class="cabecalho-site">
     <nav class="barra-menu conteiner">
-      <a class="marca" href="index.html"><img src="assets/logo.svg" alt="" class="icone-marca"><span>VerdeVigia</span></a>
-      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <a class="marca" href="index.html">
+        <img src="assets/logo.svg" alt="" class="icone-marca">
+        <span>VerdeVigia</span>
+      </a>
+
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+
       <ul class="links-menu" id="main-menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -40,11 +47,13 @@
             <input id="name" name="name" type="text" autocomplete="name" placeholder="Seu nome">
             <small class="mensagem-erro"></small>
           </div>
+
           <div class="campo-formulario">
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@email.com">
             <small class="mensagem-erro"></small>
           </div>
+
           <div class="campo-formulario">
             <label for="subject">Assunto</label>
             <select id="subject" name="subject">
@@ -56,11 +65,13 @@
             </select>
             <small class="mensagem-erro"></small>
           </div>
+
           <div class="campo-formulario">
             <label for="message">Mensagem</label>
             <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem"></textarea>
             <small class="mensagem-erro"></small>
           </div>
+
           <button class="botao principal cheio" type="submit">Enviar mensagem</button>
           <p class="retorno-formulario" id="formFeedback"></p>
         </form>
@@ -81,6 +92,7 @@
       <a href="faq.html">Ver perguntas frequentes</a>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
